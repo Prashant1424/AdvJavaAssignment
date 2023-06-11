@@ -14,6 +14,7 @@ public class UserRegistration {
         boolean b = m.matches();
 
         System.out.println("Your entered First name is " + (b ? "valid":"invalid") + ".");
+
     }
 
     public void lastName(String name){
@@ -25,6 +26,7 @@ public class UserRegistration {
         boolean b = m.matches();
 
         System.out.println("Your entered Last name is " + (b ? "valid":"invalid") + ".");
+
     }
 
     public void email(String mail){
@@ -37,6 +39,7 @@ public class UserRegistration {
         boolean b = m.matches();
 
         System.out.println("Your entered email is " + (b ? "valid":"invalid") + ".");
+
     }
 
     public void mobileNum(String num){
@@ -48,13 +51,14 @@ public class UserRegistration {
         boolean b = m.matches();
 
         System.out.println("Your entered Mobile number is " + (b ? "valid":"invalid") + ".");
+
     }
 
-    public void password(String name){
+    public void password(String psw){
 
         Pattern p = Pattern.compile("^.*(?=.{8,})(?=..*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$");
 
-        Matcher m = p.matcher(name);
+        Matcher m = p.matcher(psw);
 
         boolean b = m.matches();
 
